@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <title>Wirtschaft China</title>
+   <!-- BoxIcons v2.1.2 -->
+   <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet">
+   <!-- CSS File -->
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/chart.css">
+   <link rel="stylesheet" href="css/beautyToast.css">
+
+   <!-- ApexCharts CDN -->
+   <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+</head>
+
+<body>
+   <div id="outer-container">
+      <div class="sidebar" id="side">
+         <div class="toggle">
+            <i class="bx bx-chevron-right"></i>
+         </div>
+         <div class="logo">
+            <img src="images/logo.png" alt="...">
+            <h3>China</h3>
+         </div>
+         <nav>
+            <div class="nav-title">
+               Info
+            </div>
+            <ul>
+               <!--lang-hover="sdie_home"-->
+
+               <a href="#s1">
+                  <li class="nav-item active">
+                     <i class='bx bx-trending-up'></i>
+                     <span>Wirtschaft Chinas</span>
+                  </li>
+               </a>
+
+               <a href="#sFaq">
+                  <li class="nav-item">
+                     <i class='bx bx-question-mark'></i>
+                     <span lang-key="side_faq">FAQ</span>
+                  </li>
+               </a>
+
+            </ul>
+
+            <div class="nav-title">
+               Links
+            </div>
+            <ul>
+               <a href="https://data.worldbank.org/country/china" target="_blank">
+                  <li class="nav-item" id="youtube">
+                     <i class='bx bx-world' ></i>
+                     <span style="color:white">World Bank</span>
+                  </li>
+               </a>
+            </ul>
+
+            <div class="nav-credits">
+               © Finnegan Kaiser 2024
+            </div>
+         </nav>
+      </div>
+      <div id="content">
+         <div class="general" id="general">
+
+            <div id="s1">
+               <div class="title">Die Wirtschaft von China</div>
+               <div class="line"></div>
+               <div class="text">
+                  Die Wirtschaft Chinas hat in den letzten Jahrzehnten einen beispiellosen Wandel und eine rasante Entwicklung erlebt, 
+				  die sie zu einer der bedeutendsten und dynamischsten Volkswirtschaften der Welt gemacht hat. Mit einer jahrtausendalten 
+				  Geschichte als Handelsnation und einer enormen Bevölkerungszahl hat China in den letzten Jahren eine bemerkenswerte Transformation 
+				  von einer überwiegend agrarisch geprägten Wirtschaft zu einer industriellen und zunehmend auch dienstleistungsorientierten Wirtschaft durchlaufen.
+               </div>
+            </div>
+
+            <div id="s2">
+               <div class="title">Wirtschaftswachstum und -transformation</div>
+               <div class="line"></div>
+               <div class="text">
+                  China hat seit den späten 1970er Jahren ein bemerkenswertes Wirtschaftswachstum erlebt, das es von einem agrarischen zu einem der führenden 
+				  Industrieländer der Welt transformiert hat. Diese Transformation wurde durch eine Reihe von Reformen eingeleitet, die den Übergang von einer 
+				  zentralisierten Planwirtschaft zu einer gemischten Wirtschaft ermöglichten. Die Öffnung für ausländische Investitionen, die Förderung des privaten 
+				  Sektors und die Liberalisierung des Handels haben dazu beigetragen, ein dynamisches Wirtschaftsumfeld zu schaffen.
+               </div>
+            </div>
+
+            <div id="s3">
+               <div class="title">Handel und Internationale Beziehungen</div>
+               <div class="line"></div>
+               <div class="text">
+					Als eine der größten Volkswirtschaften der Welt ist China ein wichtiger Akteur im internationalen Handel. Das Land exportiert eine breite 
+					Palette von Produkten, darunter Elektronik, Bekleidung, Maschinen und Spielzeug, in Länder auf der ganzen Welt. Gleichzeitig importiert es 
+					große Mengen an Rohstoffen wie Erdöl, Eisen und Kupfer sowie hochwertige Güter wie Fahrzeuge und Maschinen. China hat enge Handelsbeziehungen 
+					mit vielen Ländern aufgebaut und spielt eine zunehmend wichtige Rolle in globalen Handelsabkommen.
+               </div>
+
+               <!--<br>
+               <div class="card hidden">
+                  <h2>Downloads</h2>
+                  <p>Month-on-month comparison</p>
+                  <div class="pulse"></div>
+                  <div class="area-chart">
+                     <div class="grid"></div>
+                  </div>
+               </div>-->
+            </div>
+
+            <div id="s4">
+               <div class="title">Infrastruktur und Technologie</div>
+               <div class="line"></div>
+               <div class="text">
+                  China hat beträchtliche Investitionen in Infrastrukturprojekte getätigt, um das Wirtschaftswachstum zu unterstützen und die wirtschaftliche 
+				  Entwicklung in allen Teilen des Landes zu fördern. Dazu gehören Straßen, Schienen, Flughäfen und Häfen, die das Land zu einem der am besten 
+				  vernetzten der Welt machen. Darüber hinaus ist China ein führender Akteur in vielen Technologiebereichen geworden, darunter Telekommunikation, 
+				  Informationstechnologie und erneuerbare Energien. Das Land investiert massiv in Forschung und Entwicklung, um seine Position als Technologieführer 
+				  weiter zu stärken.
+               </div>
+            </div>
+
+            <div id="s5">
+               <div class="title">Binnenmarkt und Verbraucherverhalten</div>
+               <div class="line"></div>
+               <div class="text">
+                  Der chinesische Binnenmarkt hat sich in den letzten Jahren stark entwickelt, angetrieben durch das Wachstum der Mittelschicht und den steigenden 
+				  Lebensstandard. Die steigenden Einkommen und die Urbanisierung haben zu einer zunehmenden Konsumnachfrage geführt, was China zu einem wichtigen 
+				  Zielmarkt für Unternehmen aus aller Welt macht. Der Binnenmarkt bietet enorme Chancen, aber auch Herausforderungen, da Unternehmen sich bemühen, 
+				  die Bedürfnisse und Vorlieben der chinesischen Verbraucher zu verstehen und zu erfüllen.
+               </div>
+            </div>
+
+            <div id="s6">
+               <div class="title">Wirtschaftsreformen und Herausforderungen</div>
+               <div class="line"></div>
+               <div class="text">
+					China hat im Laufe der Jahre eine Reihe von Wirtschaftsreformen durchgeführt, um seine Wirtschaft zu liberalisieren und das Wachstum zu fördern. 
+					Diese Reformen umfassten die Privatisierung von Staatsunternehmen, die Deregulierung von Branchen und die Schaffung eines transparenteren und
+					wettbewerbsfähigeren Geschäftsumfelds. Trotz seines beeindruckenden Wirtschaftswachstums steht China vor einer Reihe von Herausforderungen, darunter 
+					Umweltverschmutzung, ungleiche Einkommensverteilung und Handelskonflikte mit anderen Ländern. Die Bewältigung dieser Herausforderungen wird entscheidend sein, 
+					um das langfristige Wachstum und die Stabilität der chinesischen Wirtschaft sicherzustellen.
+               </div>
+            </div>
+			
+			<div class="card hidden">
+                  <h2>Export in Millionen</h2>
+                  <p></p>
+                  <div class="pulse"></div>
+                  <div class="area-chart">
+                     <div class="grid"></div>
+                  </div>
+               </div>
+
+            <!--<div id="sProgress">
+               <div class="title" lang-key="title_progress">Progress</div>
+               <div class="line"></div>
+               <div class="space"></div>
+
+               <section class="step-wizard hidden">
+                  <ul class="step-wizard-list">
+                     <li class="step-wizard-item current-item">
+                        <span class="progress-count">1</span>
+                        <span class="progress-label" lang-key="progress_a">Setup engine</span>
+                     </li>
+                     <li class="step-wizard-item">
+                        <span class="progress-count">2</span>
+                        <span class="progress-label" lang-key="progress_b">...</span>
+                     </li>
+                     <li class="step-wizard-item">
+                        <span class="progress-count">3</span>
+                        <span class="progress-label" lang-key="progress_c">...</span>
+                     </li>
+                     <li class="step-wizard-item">
+                        <span class="progress-count">4</span>
+                        <span class="progress-label" lang-key="progress_d">Release</span>
+                     </li>
+                  </ul>
+               </section>
+            </div>-->
+
+            <!--<div id="sImages">
+               <div class="title" lang-key="title_images">Images</div>
+               <div class="line"></div>
+               <div class="space"></div>
+
+               <div class="slider hidden" id="sliderImages">
+
+                  <div class="slider-items">
+                     <img class="slider-item" src="images/slider/01.jpg" alt="...">
+                     <img class="slider-item" src="images/slider/02.jpg" alt="...">
+                     <img class="slider-item" src="images/slider/03.jpg" alt="...">
+                  </div>
+
+                  <div class="slider-controls">
+                     <span class="bx bxs-chevron-left prev" onclick="changeSlide(-1)"></span>
+                     <span class="bx bxs-chevron-right next" onclick="changeSlide(1)"></span>
+                  </div>
+
+                  <div class="slider-indicators">
+                     <span onclick="moveTo(1)"></span>
+                     <span onclick="moveTo(2)"></span>
+                     <span onclick="moveTo(3)"></span>
+                  </div>
+
+                  <div class="slider-content">
+                     <h3 lang-key="slider_textA">Ocean View</h3>
+                     <h3 lang-key="slider_textB">Green Valley</h3>
+                     <h3 lang-key="slider_textC">Lake Reflection</h3>
+                  </div>
+
+               </div>
+            </div>-->
+
+            <div id="sFaq">
+               <div class="title">FAQ</div>
+               <div class="line"></div>
+               <div class="space"></div>
+
+               <div class="faq">
+                  <div class="faq-title">
+                     <h3>Wie hat sich die chinesische Wirtschaft in den letzten Jahrzehnten entwickelt?</h3>
+                     <div class="faq-arrow"></div>
+                  </div>
+                  <div class="faq-answer">
+                     <p>Die chinesische Wirtschaft hat dank Handelsreformen und Investitionen in Technologie und Infrastruktur ein starkes Wachstum verzeichnet.</p>
+                  </div>
+               </div>
+
+               <div class="faq">
+                  <div class="faq-title">
+                     <h3>Welche Rolle spielt China in der globalen Wirtschaft?</h3>
+                     <div class="faq-arrow"></div>
+                  </div>
+                  <div class="faq-answer">
+                     <p>China ist eine der größten Volkswirtschaften der Welt und ein wichtiger Akteur in globalen Handelsnetzwerken.</p>
+                  </div>
+               </div>
+
+               <div class="faq">
+                  <div class="faq-title">
+                     <h3>Welche Sektoren treiben das Wirtschaftswachstum in China an?</h3>
+                     <div class="faq-arrow"></div>
+                  </div>
+                  <div class="faq-answer">
+                     <p>Fertigung, Technologie, Telekommunikation und Finanzdienstleistungen sind wesentliche Treiber des chinesischen Wirtschaftswachstums.</p>
+                  </div>
+               </div>
+
+               <div class="faq">
+                  <div class="faq-title">
+                     <h3>Wie hat die chinesische Regierung das Wirtschaftswachstum unterstützt?</h3>
+                     <div class="faq-arrow"></div>
+                  </div>
+                  <div class="faq-answer">
+                     <p>Die chinesische Regierung fördert das Wirtschaftswachstum durch Investitionen in Infrastruktur, Steueranreize und Innovationen.</p>
+                  </div>
+               </div>
+
+               <div class="faq">
+                  <div class="faq-title">
+                     <h3>Welche Herausforderungen stehen der chinesischen Wirtschaft gegenüber?</h3>
+                     <div class="faq-arrow"></div>
+                  </div>
+                  <div class="faq-answer">
+                     <p>China muss Umweltverschmutzung, Ungleichheit zwischen Stadt und Land und demografische Veränderungen bewältigen.</p>
+                  </div>
+               </div>
+
+               <div class="faq">
+                  <div class="faq-title">
+                     <h3>Wie wirkt sich die Handelspolitik auf die chinesische Wirtschaft aus?</h3>
+                     <div class="faq-arrow"></div>
+                  </div>
+                  <div class="faq-answer">
+                     <p>Handelskonflikte, insbesondere mit den USA, können die chinesische Wirtschaft belasten und Unsicherheiten verursachen.</p>
+                  </div>
+               </div>
+
+               <div class="faq">
+                  <div class="faq-title">
+                     <h3>Welche Rolle spielt das chinesische Finanzsystem im globalen Kontext?</h3>
+                     <div class="faq-arrow"></div>
+                  </div>
+                  <div class="faq-answer">
+                     <p>Chinas Finanzsystem gewinnt an Bedeutung und trägt zur Internationalisierung des Renminbi und zur Stärkung der globalen Finanzmärkte bei.</p>
+                  </div>
+               </div>
+
+
+            </div>
+            <br>
+         </div>
+      </div>
+   </div>
+
+   <div class="subfooter-copyright">
+      © Finnegan Kaiser 2024
+   </div>
+
+   <!-- JS File -->
+   <script type="text/javascript" src="js/script.js"></script>
+   <script type="text/javascript" src="js/scroll.js"></script>
+   <script type="text/javascript" src="js/slider.js"></script>
+   <script type="text/javascript" src="js/chart.js"></script>
+   <script type="text/javascript" src="js/jquery.js"></script>
+   <script type="text/javascript" src="js/beautyToast.js"></script>
+</body>
+
+</html>
