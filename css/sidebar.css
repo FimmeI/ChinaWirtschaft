@@ -412,7 +412,7 @@ img {
     word-wrap: break-word; /* Erlaubt das Umbruch von langen Wörtern */
   }
 
-#s1, #sBeziehungen, #sFaq{
+#s1, #sBeziehungen, #sStats, #sFaq{
   scroll-margin-top: 100px; /* whatever is a nice number that gets you past the header */
   margin-top: 100px;
 }
