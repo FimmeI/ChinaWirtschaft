@@ -24,10 +24,6 @@ body {
     background: #1b1b1bb8;
     box-shadow: 0 50px 100px rgba(0, 0, 0, .08);
     user-select: none;
-    box-shadow: 0 8px 32px rgb(61, 46, 6);
-}
-.card:hover{
-	box-shadow: 0 8px 64px rgb(61, 46, 6);
 }
 
 .card h2 {

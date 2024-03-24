@@ -8,7 +8,7 @@
    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
    
          <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css" crossorigin="">
 
@@ -46,9 +46,21 @@
             <div class="sidebar__content">
                <div class="sidebar__list">
                   <a href="#s1" class="sidebar__link active-link">
-                     <i class="ri-line-chart-line"></i>
+                     <i class="ri-leaf-line"></i>
                      <span class="sidebar__link-name">Wirtschaft</span>
                      <span class="sidebar__link-floating">Wirtschaft</span>
+                  </a>
+                  
+                  <a href="#sBeziehungen" class="sidebar__link">
+                     <i class="ri-links-line"></i>
+                     <span class="sidebar__link-name">Beziehungen</span>
+                     <span class="sidebar__link-floating">Beziehungen</span>
+                  </a>
+                  
+                  <a href="#sStats" class="sidebar__link">
+                     <i class="ri-line-chart-line"></i>
+                     <span class="sidebar__link-name">Statistiken</span>
+                     <span class="sidebar__link-floating">Statistiken</span>
                   </a>
                   
                   <a href="#sFaq" class="sidebar__link">
@@ -105,8 +117,7 @@
             </div>
 
             <div id="s2">
-               <div class="title">Wirtschaftswachstum und -transformation</div>
-               <div class="line"></div>
+               <div class="subtitle">Wirtschaftswachstum und -transformation</div>
                <div class="text">
                   China hat seit den späten 1970er Jahren ein bemerkenswertes Wirtschaftswachstum erlebt, das es von einem agrarischen zu einem der führenden 
 				  Industrieländer der Welt transformiert hat. Diese Transformation wurde durch eine Reihe von Reformen eingeleitet, die den Übergang von einer 
@@ -115,30 +126,8 @@
                </div>
             </div>
 
-            <div id="s3">
-               <div class="title">Handel und Internationale Beziehungen</div>
-               <div class="line"></div>
-               <div class="text">
-					Als eine der größten Volkswirtschaften der Welt ist China ein wichtiger Akteur im internationalen Handel. Das Land exportiert eine breite 
-					Palette von Produkten, darunter Elektronik, Bekleidung, Maschinen und Spielzeug, in Länder auf der ganzen Welt. Gleichzeitig importiert es 
-					große Mengen an Rohstoffen wie Erdöl, Eisen und Kupfer sowie hochwertige Güter wie Fahrzeuge und Maschinen. China hat enge Handelsbeziehungen 
-					mit vielen Ländern aufgebaut und spielt eine zunehmend wichtige Rolle in globalen Handelsabkommen.
-               </div>
-
-               <!--<br>
-               <div class="card hidden">
-                  <h2>Downloads</h2>
-                  <p>Month-on-month comparison</p>
-                  <div class="pulse"></div>
-                  <div class="area-chart">
-                     <div class="grid"></div>
-                  </div>
-               </div>-->
-            </div>
-
             <div id="s4">
-               <div class="title">Infrastruktur und Technologie</div>
-               <div class="line"></div>
+               <div class="subtitle">Infrastruktur und Technologie</div>
                <div class="text">
                   China hat beträchtliche Investitionen in Infrastrukturprojekte getätigt, um das Wirtschaftswachstum zu unterstützen und die wirtschaftliche 
 				  Entwicklung in allen Teilen des Landes zu fördern. Dazu gehören Straßen, Schienen, Flughäfen und Häfen, die das Land zu einem der am besten 
@@ -149,8 +138,7 @@
             </div>
 
             <div id="s5">
-               <div class="title">Binnenmarkt und Verbraucherverhalten</div>
-               <div class="line"></div>
+               <div class="subtitle">Binnenmarkt und Verbraucherverhalten</div>
                <div class="text">
                   Der chinesische Binnenmarkt hat sich in den letzten Jahren stark entwickelt, angetrieben durch das Wachstum der Mittelschicht und den steigenden 
 				  Lebensstandard. Die steigenden Einkommen und die Urbanisierung haben zu einer zunehmenden Konsumnachfrage geführt, was China zu einem wichtigen 
@@ -160,8 +148,7 @@
             </div>
 
             <div id="s6">
-               <div class="title">Wirtschaftsreformen und Herausforderungen</div>
-               <div class="line"></div>
+               <div class="subtitle">Wirtschaftsreformen und Herausforderungen</div>
                <div class="text">
 					China hat im Laufe der Jahre eine Reihe von Wirtschaftsreformen durchgeführt, um seine Wirtschaft zu liberalisieren und das Wachstum zu fördern. 
 					Diese Reformen umfassten die Privatisierung von Staatsunternehmen, die Deregulierung von Branchen und die Schaffung eines transparenteren und
@@ -170,15 +157,6 @@
 					um das langfristige Wachstum und die Stabilität der chinesischen Wirtschaft sicherzustellen.
                </div>
             </div>
-			
-			<div class="card hidden">
-                  <h2>Export in Millionen</h2>
-                  <p></p>
-                  <div class="pulse"></div>
-                  <div class="area-chart">
-                     <div class="grid"></div>
-                  </div>
-               </div>
 
             <!--<div id="sProgress">
                <div class="title" lang-key="title_progress">Progress</div>
@@ -206,39 +184,73 @@
                   </ul>
                </section>
             </div>-->
-
-            <!--<div id="sImages">
-               <div class="title" lang-key="title_images">Images</div>
+			
+            <div id="sBeziehungen">
+               <div class="title">Handel und Internationale Beziehungen</div>
                <div class="line"></div>
                <div class="space"></div>
-
-               <div class="slider hidden" id="sliderImages">
-
-                  <div class="slider-items">
-                     <img class="slider-item" src="images/slider/01.jpg" alt="...">
-                     <img class="slider-item" src="images/slider/02.jpg" alt="...">
-                     <img class="slider-item" src="images/slider/03.jpg" alt="...">
-                  </div>
-
-                  <div class="slider-controls">
-                     <span class="bx bxs-chevron-left prev" onclick="changeSlide(-1)"></span>
-                     <span class="bx bxs-chevron-right next" onclick="changeSlide(1)"></span>
-                  </div>
-
-                  <div class="slider-indicators">
-                     <span onclick="moveTo(1)"></span>
-                     <span onclick="moveTo(2)"></span>
-                     <span onclick="moveTo(3)"></span>
-                  </div>
-
-                  <div class="slider-content">
-                     <h3 lang-key="slider_textA">Ocean View</h3>
-                     <h3 lang-key="slider_textB">Green Valley</h3>
-                     <h3 lang-key="slider_textC">Lake Reflection</h3>
-                  </div>
-
+			    <div class="text">
+					Als eine der größten Volkswirtschaften der Welt ist China ein wichtiger Akteur im internationalen Handel. Das Land exportiert eine breite 
+					Palette von Produkten, darunter Elektronik, Bekleidung, Maschinen und Spielzeug, in Länder auf der ganzen Welt. Gleichzeitig importiert es 
+					große Mengen an Rohstoffen wie Erdöl, Eisen und Kupfer sowie hochwertige Güter wie Fahrzeuge und Maschinen. China hat enge Handelsbeziehungen 
+					mit vielen Ländern aufgebaut und spielt eine zunehmend wichtige Rolle in globalen Handelsabkommen.
                </div>
-            </div>-->
+			</div>
+			
+			
+			
+            <div id="sStats">
+               <div class="title">Statistiken</div>
+               <div class="line"></div>
+               <div class="space"></div>
+			   <div class="chart-container">
+				<div class="card hidden show">
+					  <h2>Export von Waren & Dienstleistungen in Millionen $</h2>
+					  <data>2.006, 2.176, 2.354, 2.462, 2.363, 2.199, 2.424, 2.655, 2.628, 2.729, 3.554, 3.714</data>
+					<p></p>
+					<div class="pulse"></div>
+					<div class="area-chart">
+						<div class="grid"></div>
+					</div>
+				</div>
+			   
+				<div style="width: 50px;"></div>
+				<div class="card hidden show">
+					<h2>Import von Waren & Dienstleistungen in Millionen $</h2>
+					<data>1.825, 1.943, 2.119, 2.241, 2.003, 1.944, 2.208, 2.564, 2.496, 2.374, 3.093, 3.137</data>
+					<p></p>
+					<div class="pulse"></div>
+					<div class="area-chart">
+						<div class="grid"></div>
+					</div>
+				</div>
+				</div>
+			   
+			   <div class="chart-container">
+				<div class="card hidden show">
+					<h2>Bruttoinlandsprodukt in $</h2>
+					<data>7.551, 8.532, 9.570, 10.475, 11.061, 11.233, 12.310, 13.894, 14.279, 14.687, 17.820, 17.963</data>
+					<p></p>
+					<div class="pulse"></div>
+					<div class="area-chart">
+						<div class="grid"></div>
+					</div>
+				</div>
+			   
+				<div style="width: 50px;"></div>
+				<div class="card hidden show">
+					<h2>Bruttoinlandsprodukt Wachstum in %</h2>
+					<data>9.55, 7.86, 7.77, 7.43, 7.04, 6.85, 6.95, 6.75, 5.95, 2.24, 8.45, 2.99</data>
+					<p></p>
+					<div class="pulse"></div>
+					<div class="area-chart">
+						<div class="grid"></div>
+					</div>
+				</div>
+				</div>
+			</div>
+			
+			
 
             <div id="sFaq">
                <div class="title">FAQ</div>

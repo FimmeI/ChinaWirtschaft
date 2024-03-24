@@ -21,7 +21,7 @@ const defaultOptions = {
         },
         width: '100%',
         height: 180,
-        offsetY: 18
+        offsetY: 15
     },
 
     dataLabels: {
@@ -29,6 +29,11 @@ const defaultOptions = {
     }
 
 }
+
+
+
+document.querySelectorAll(".area-chart").forEach(chart => {
+	
 
 let barOptions = {
 
@@ -52,7 +57,7 @@ let barOptions = {
     series: [
         {
             name: "Export in Millionen",
-            data: [1, 5, 10, 15, 20, 25, 30, 35, 40, 50, 100, 0]
+            data: []
         }
     ],
 
@@ -85,7 +90,7 @@ let barOptions = {
     grid: {
         borderColor: "rgba(0, 0, 0, 0)",
         padding: {
-            top: -30,
+            top: -20,
             right: 0,
             bottom: -8,
             left: 12
@@ -126,14 +131,31 @@ let barOptions = {
             show: false
         },
 
-        categories: ["2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019", "2020", "2021", "2022", "2023"]
+        categories: ["2011", "2013", "2014", "2015", "2016", "2017", "2018", "2019", "2020", "2021", "2022", "2022"]
 
     }
 
 };
-
-let chart = new ApexCharts(
-    document.querySelector(".area-chart"), barOptions
-);
-
-chart.render();
+	
+	
+	barOptions.series[0].name = chart.parentElement.children[0].innerText
+	
+	var dataText = chart.parentElement.children[1].innerText.replace(/\s/g, '');
+	var dataArray = dataText.split(',');
+	var numberArray = dataArray.map(function(item) {
+		return parseFloat(item);
+	});
+	
+	barOptions.series[0].data = numberArray
+	
+	// Remove Element
+	var elementToRemove = chart.parentElement.children[1];
+	if (elementToRemove) {
+		elementToRemove.remove();
+	}
+	
+	let c = new ApexCharts(
+		chart, barOptions
+	);
+	c.render();
+});
