@@ -14,6 +14,33 @@ document.getElementById('side').addEventListener('click', () => {
   sidebar.classList.add('open');
 });*/
 
+// Funktion zum Überwachen der Änderungen in der Sidebar
+function observeSidebarChanges() {
+    var sidebar = document.querySelector('.sidebar');
+    var general = document.querySelector('.general');
+
+    // Überwachung der Änderungen in der Klasse der Sidebar
+    var observer = new MutationObserver(function(mutationsList) {
+        for (var mutation of mutationsList) {
+            if (mutation.type === 'attributes' && mutation.attributeName === 'class') {
+                if (sidebar.classList.contains('show-sidebar')) {
+                    general.style.marginLeft = '150px';
+                } else {
+                    general.style.marginLeft = '350px';
+                }
+            }
+        }
+    });
+
+    // Konfiguration des Observers und Starten der Überwachung
+    var config = { attributes: true };
+    observer.observe(sidebar, config);
+}
+
+// Aufruf der Funktion zum Starten der Überwachung
+observeSidebarChanges();
+
+
 
 /*=============== SHOW SIDEBAR ===============*/
 const showSidebar = (toggleId, sidebarId, mainId) =>{

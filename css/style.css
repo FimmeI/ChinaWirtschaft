@@ -63,6 +63,11 @@ body {
 	opacity: 0;
 }
 
+.sidebar.show-sidebar .general {
+    margin-left: 50px;
+}
+
+
 #content {
 	display: table-cell;
     width: 100%;
