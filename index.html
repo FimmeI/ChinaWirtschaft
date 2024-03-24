@@ -2,68 +2,94 @@
 <html lang="en">
 
 <head>
-   <title>Wirtschaft China</title>
-   <!-- BoxIcons v2.1.2 -->
-   <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet">
-   <!-- CSS File -->
-   <link rel="stylesheet" href="css/style.css">
-   <link rel="stylesheet" href="css/chart.css">
-   <link rel="stylesheet" href="css/beautyToast.css">
+
 
    <!-- ApexCharts CDN -->
    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+   
+         <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=0">
+
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css" crossorigin="">
+
+      <!--=============== CSS ===============-->
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/chart.css">
+   <link rel="stylesheet" href="css/sidebar.css">
+   <link rel="stylesheet" href="css/beautyToast.css">
+	  
+	  <meta http-equiv='cache-control' content='no-cache'> 
+<meta http-equiv='expires' content='0'> 
+<meta http-equiv='pragma' content='no-cache'>
+
+      <title>Wirtschaft Chinas</title>
 </head>
 
 <body>
    <div id="outer-container">
-      <div class="sidebar" id="side">
-         <div class="toggle">
-            <i class="bx bx-chevron-right"></i>
-         </div>
-         <div class="logo">
-            <img src="images/logo.png" alt="...">
-            <h3>China</h3>
-         </div>
-         <nav>
-            <div class="nav-title">
-               Info
+      <!--=============== HEADER ===============-->
+      <header class="header">
+         <div class="header__container container">
+            <div class="header__toggle" id="header-toggle">
+               <i class="ri-menu-line"></i>
             </div>
-            <ul>
-               <!--lang-hover="sdie_home"-->
-
-               <a href="#s1">
-                  <li class="nav-item active">
-                     <i class='bx bx-trending-up'></i>
-                     <span>Wirtschaft Chinas</span>
-                  </li>
-               </a>
-
-               <a href="#sFaq">
-                  <li class="nav-item">
-                     <i class='bx bx-question-mark'></i>
-                     <span lang-key="side_faq">FAQ</span>
-                  </li>
-               </a>
-
-            </ul>
-
-            <div class="nav-title">
-               Links
+         </div>
+      </header>
+	      <!--=============== SIDEBAR ===============-->
+      <div class="sidebar" id="sidebar">
+         <nav class="sidebar__container">
+            <div class="sidebar__logo">
+               <img src="images/logo.png" alt="" class="sidebar__logo-img">
+			   <h3>China</h3>
             </div>
-            <ul>
-               <a href="https://data.worldbank.org/country/china" target="_blank">
-                  <li class="nav-item" id="youtube">
-                     <i class='bx bx-world' ></i>
-                     <span style="color:white">World Bank</span>
-                  </li>
-               </a>
-            </ul>
+
+            <div class="sidebar__content">
+               <div class="sidebar__list">
+                  <a href="#s1" class="sidebar__link active-link">
+                     <i class="ri-line-chart-line"></i>
+                     <span class="sidebar__link-name">Wirtschaft</span>
+                     <span class="sidebar__link-floating">Wirtschaft</span>
+                  </a>
+                  
+                  <a href="#sFaq" class="sidebar__link">
+                     <i class="ri-question-answer-line"></i>
+                     <span class="sidebar__link-name">FAQ</span>
+                     <span class="sidebar__link-floating">FAQ</span>
+                  </a>
+               </div>
+
+               <h3 class="sidebar__title">
+                  <span>Quellen</span>
+               </h3>
+
+               <div class="sidebar__list">
+                  <a href="https://data.worldbank.org/" class="sidebar__link">
+                     <i class="ri-global-line"></i>
+                     <span class="sidebar__link-name" style="color: rgb(66, 120, 245);text-decoration: underline;">World Bank</span>
+                     <span class="sidebar__link-floating">World Bank</span>
+                  </a>
+
+                  <a href="https://www.oecd.org/china/" class="sidebar__link">
+                     <i class="ri-global-line"></i>
+                     <span class="sidebar__link-name" style="color: rgb(66, 120, 245);text-decoration: underline;">OECD</span>
+                     <span class="sidebar__link-floating">OECD</span>
+                  </a>
+
+                  <a href="http://www.stats.gov.cn/english/" class="sidebar__link">
+                     <i class="ri-global-line"></i>
+                     <span class="sidebar__link-name" style="color: rgb(66, 120, 245);text-decoration: underline;">NBoSC</span>
+                     <span class="sidebar__link-floating">NBoSC</span>
+                  </a>
+               </div>
 
             <div class="nav-credits">
                © Finnegan Kaiser 2024
             </div>
+               </div>
+            </div>
          </nav>
       </div>
+
       <div id="content">
          <div class="general" id="general">
 
@@ -303,7 +329,6 @@
    <!-- JS File -->
    <script type="text/javascript" src="js/script.js"></script>
    <script type="text/javascript" src="js/scroll.js"></script>
-   <script type="text/javascript" src="js/slider.js"></script>
    <script type="text/javascript" src="js/chart.js"></script>
    <script type="text/javascript" src="js/jquery.js"></script>
    <script type="text/javascript" src="js/beautyToast.js"></script>
